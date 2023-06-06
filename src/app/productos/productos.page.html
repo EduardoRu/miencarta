@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Productos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+    <table class="tableProd">
+      <thead>
+        <tr>
+          <td>#COD</td>
+          <td>Nombre</td>
+          <td>Precio</td>
+          <td>Acciones</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let p of productos">
+          <td>{{p.codigo}}</td>
+          <td>{{p.nombre}}</td>
+          <td>{{p.precio}}</td>
+          <td>Borrar/Editar</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ion-list>
+      <ion-item>
+        <ion-input label="Codigo del producto" [(ngModel)] = "producto.codigo"></ion-input>
+      </ion-item>
+      <ion-item> 
+        <ion-input label="Nombre" [(ngModel)] = "producto.nombre"></ion-input> 
+      </ion-item>
+      <ion-item> 
+        <ion-input label="Precio" [(ngModel)] = "producto.precio"></ion-input> 
+      </ion-item>
+      <ion-item>
+        <ion-button (click) = "getDatos()">Guardar</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

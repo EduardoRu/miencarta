@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <div class="text-welecome">
+    <p>Bienvenido <br> de vuelta!</p>
+  </div>
+  <div class="registerText" routerLink="/register">
+    Registro
+  </div>
+  <div class="content-form">
+    <div class="quest-form">
+      <ion-label class="labelForm">
+        Correo electronico
+      </ion-label>
+      <ion-input 
+      class="input-form" 
+      type="email" 
+      placeholder="Ingrese su correo electronico"
+      [(ngModel)]="email"
+      ></ion-input>
+
+      <ion-label class="labelForm">
+        Contraseña
+      </ion-label>
+      <ion-input 
+      class="input-form" 
+      placeholder="Ingrese su contraseña" 
+      type="password" 
+      [(ngModel)]="pass"
+      ></ion-input>
+
+      <div class="submit-form">
+        <ion-button class="btnForm" shape="round" (click)="iniciarsesion(email, pass)">Iniciar sesión</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

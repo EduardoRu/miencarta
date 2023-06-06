@@ -1,0 +1,67 @@
+.text-welecome{
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background: #2d54ee;
+    color: white;
+    border-radius: 0 0 90% 0;
+    width: 60%;
+    height: 150px;
+    position: relative;
+    padding: 1px;
+    padding-left: 10px;
+}
+
+.registerText{
+    background: #2d54ee;
+    letter-spacing: 1px;
+    padding: 20px 15px 0 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    border-radius: 0 0 0 90%;
+    text-align: end;
+    width: 30%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.content-form{
+    background: #07193f;
+    color:white;
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 125px 125px  0 0;
+    box-shadow: 0px 0px 90px 90px rgba(13, 37, 90, 0.192);
+}
+
+.quest-form{
+    text-align: center;
+    margin: 7%;
+}
+
+.submit-form{
+    text-align: center;
+}
+
+.input-form{
+    border: none;
+    border-bottom: 1px solid rgb(83, 80, 80);
+}
+
+.labelForm{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.btnForm{
+    width: 50%;
+    height: 6ch;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --background: #2d54ee;
+    font-size: 16px;
+}

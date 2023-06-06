@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>restaurant-form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-grid [fixed]="true">
+  <ion-row>
+    <ion-col size-md="6" offset-md="3">
+      <ion-item>
+        <ion-label>
+          Nombre
+        </ion-label>
+        <ion-input [(ngModel)] = "name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Descripción
+        </ion-label>
+        <ion-input [(ngModel)] = "description"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="guardarRestaruante(name, description)">Guardar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>
